@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono&display=swap"
+            rel="stylesheet">
+    </head>
+<body>
+  <h2>Ingredientes</h2><button id="abrirModal">Eligelos</button>
+
+ 
+<!-- Ventana modal, por defecto no visiblel -->
+<div id="ventanaModal" class="modal">
+  <div class="contenido-modal">
+      <span class="cerrar">&times;</span>
+      <!-- <h2> Ingredientes</h2>
+      <p>Pan</p>
+      <p>Tomate</p>
+      <p>Lechuga</p>
+      <p>Pimiento</p>
+      <p>Pan</p> -->
+      <p> ¿Quieres alguno más?</p>
+  
+  <form action="/action_page.php">
+    <input type="checkbox" id="ingredient" name="selection" value="panSuperior">
+    <label for="ingredient"> panSuperior</label><br>
+    <input type="checkbox" id="ingredient" name="selection" value="Tomate">
+    <label for="ingredient"> Tomate</label><br>
+    <input type="checkbox" id="ingredient" name="selection" value="Lechuga">
+    <label for="ingredient"> Lechuga</label><br>
+    <input type="checkbox" id="ingredient" name="selection" value="Pimiento">
+    <label for="ingredient"> Pimiento</label><br>
+    <input type="checkbox" id="ingredient" name="selection" value="panInferior">
+    <label for="ingredient"> panInferior</label><br><br>
+    <input type="submit" value="Submit">
+  </form>  
+  </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
